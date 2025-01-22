@@ -27,35 +27,43 @@ const ContactPage = () => {
             </div>
             {/* Social Media Icons */}
             <div className="flex space-x-4">
-              <Link
-                href="https://x.com/harisawan27"
-                aria-label="Twitter"
-                className="text-gray-600 hover:text-blue-500"
-              >
-                <FaTwitter size={24} />
-              </Link>
-              <Link
-                href="https://www.facebook.com/profile.php?id=61558545486623"
-                aria-label="Facebook"
-                className="text-gray-600 hover:text-blue-500"
-              >
-                <FaFacebook size={24} />
-              </Link>
-              <Link
-                href="https://www.instagram.com/mharisawan27"
-                aria-label="Instagram"
-                className="text-gray-600 hover:text-blue-500"
-              >
-                <FaInstagram size={24} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/m-haris-awan/"
-                aria-label="LinkedIn"
-                className="text-gray-600 hover:text-blue-500"
-              >
-                <FaLinkedin size={24} />
-              </Link>
-            </div>
+  <Link
+    href="https://x.com/harisawan27"
+    aria-label="Twitter"
+    className="text-gray-600 hover:text-blue-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaTwitter size={24} />
+  </Link>
+  <Link
+    href="https://www.facebook.com/profile.php?id=61558545486623"
+    aria-label="Facebook"
+    className="text-gray-600 hover:text-blue-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFacebook size={24} />
+  </Link>
+  <Link
+    href="https://www.instagram.com/mharisawan27"
+    aria-label="Instagram"
+    className="text-gray-600 hover:text-blue-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaInstagram size={24} />
+  </Link>
+  <Link
+    href="https://www.linkedin.com/in/m-haris-awan/"
+    aria-label="LinkedIn"
+    className="text-gray-600 hover:text-blue-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin size={24} />
+  </Link>
+</div>
           </div>
 
           {/* Right Image */}
