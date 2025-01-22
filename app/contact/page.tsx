@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import SocialLinks from "../components/SocialLinks";
 import Footer from "../components/Footer";
 import { Phone, MapPin, Mail } from "lucide-react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -25,44 +26,7 @@ const ContactPage = () => {
               <p className="font-medium">Fax: +451 215 215</p>
             </div>
             {/* Social Media Icons */}
-                 <div className="flex space-x-4">
-              <a
-                href="https://x.com/harisawan27"
-                aria-label="Twitter"
-                className="text-gray-600 hover:text-blue-500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter size={24} />
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61558545486623"
-                aria-label="Facebook"
-                className="text-gray-600 hover:text-blue-500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook size={24} />
-              </a>
-              <a
-                href="https://www.instagram.com/mharisawan27"
-                aria-label="Instagram"
-                className="text-gray-600 hover:text-blue-500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram size={24} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/m-haris-awan/"
-                aria-label="LinkedIn"
-                className="text-gray-600 hover:text-blue-500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={24} />
-              </a>
-            </div>
+                <SocialLinks />
           </div>
 
           {/* Right Image */}
