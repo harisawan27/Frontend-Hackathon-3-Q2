@@ -41,9 +41,6 @@ const Navbar = () => {
               <Link href="/about" className="hover:text-blue-500">
                 About
               </Link>
-              <Link href="/" className="hover:text-blue-500">
-                Blog
-              </Link>
               <Link href="/contact" className="hover:text-blue-500">
                 Contact
               </Link>
@@ -52,10 +49,8 @@ const Navbar = () => {
               </Link>
             </div>
 
-            {/* Cart and Search */}
+            {/* Cart */}
             <div className="hidden md:flex items-center space-x-4 text-blue-500">
-              <span>Login / Register</span>
-              <Search size={20} />
               <Link href="/cart" className="relative">
                 <ShoppingCart size={20} />
                 {totalItems > 0 && (
@@ -79,19 +74,12 @@ const Navbar = () => {
               <Link href="/about" className="block py-2">
                 About
               </Link>
-              <Link href="/" className="block py-2">
-                Blog
-              </Link>
-              <Link href="/" className="block py-2">
+              <Link href="/contact" className="block py-2">
                 Contact
               </Link>
-              <Link href="/" className="block py-2">
-                Pages
+              <Link href="/cart" className="block py-2">
+                Cart
               </Link>
-              <Link href="/" className="block py-2 text-blue-500">
-                Login / Register
-              </Link>
-              <Search size={20} className="text-blue-500 my-2" />
               <Link href="/cart" className="relative text-blue-500 my-2">
                 <ShoppingCart size={20} />
                 {totalItems > 0 && (
