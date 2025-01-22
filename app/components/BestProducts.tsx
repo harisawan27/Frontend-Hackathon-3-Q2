@@ -5,6 +5,7 @@ import Image from "next/image";
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
+import { useCart } from "@/app/context/CartContext";
 
 // Define the Product interface
 export interface Product {
@@ -26,6 +27,7 @@ const urlFor = (source: any) => builder.image(source).width(300).height(300).url
 const BestsellerProducts: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state
+  const { addToCart } = useCart();
 
   // Fetch product data from Sanity
   useEffect(() => {
